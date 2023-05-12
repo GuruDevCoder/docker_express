@@ -1,0 +1,15 @@
+{
+  "name": "docker_express",
+  "version": "1.0.0",
+  "description": "Node.js on Docker",
+  "author": "Albino Tonnina <albinotonnina@gmail.com>",
+  "main": "server.js",
+  "scripts": {
+    "docker:build": "docker build -t docker_express ./server",
+    "docker:run": "docker run -p 49160:8080 docker_express",
+    "docker:logs": "docker logs docker_express"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
